@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Montserrat:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+.hero{
+    position: relative;
+    z-index: 1;
+    height: 10%;
+ }
+ nav{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding-top: 2.8%;
+     padding-left: 10%;
+     padding-right: 10%;
+ }
+ .logo{
+     color: #FFF;
+     font-size: 50px;
+     font-weight: bold;
+ }
+ nav ul li{
+     list-style-type: none;
+     display: inline-block;
+     padding: 10px 22px;
+ }
+ nav ul li a{
+     color: white;
+     text-decoration: none;
+     font-weight: bold;
+     font-size: 30px;
+ }
+ nav ul li a:hover{
+     transition: .4s;
+     color: #ea1538;
+ }
+.span{
+     color: #ea1538;
+ }
+ a {
+     color: white;
+     text-decoration: none;
+ }
+ .animation-area{
+     width: 100%;
+     height: 100%;
+     z-index: -1;
+ }
+  .box-area{
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     overflow: hidden;
+ }
+ .box-area li{
+     position: absolute;
+     display: block;
+     list-style: none;
+     width: 25px;
+     height: 25px;
+     background:  rgba(160, 20, 60, 0.4);
+     animation: animate 20s linear infinite;
+     bottom: -150px;
+ }
+ .box-area li:nth-child(1){
+     left: 86%;
+     width: 80px;
+     height: 80px;
+     animation-delay: 0s;
+ }
+ .box-area li:nth-child(2){
+     left: 12%;
+     width: 30px;
+     height: 30px;
+     animation-delay: 1.5s;
+     animation-duration: 10s;
+ }
+ .box-area li:nth-child(3){
+     left: 70%;
+     width: 100px;
+     height: 100px;
+     animation-delay: 5.5s;
+ }
+ .box-area li:nth-child(4){
+     left: 40%;
+     width: 150px;
+     height: 150px;
+     animation-delay: 0s;
+     animation-duration: 15s;
+ }
+ .box-area li:nth-child(5){
+     left: 65%;
+     width: 40px;
+     height: 40px;
+     animation-delay: 0s;
+ }
+ .box-area li:nth-child(6){
+     left: 15%;
+     width: 110px;
+     height: 110px;
+     animation-delay: 3.5s;
+ }
+ @keyframes animate{
+     0%{
+         transform: translateY(0) rotate(0deg);
+         opacity: 1;
+     }
+     100%{
+         transform: translateY(-800px) rotate(360deg);
+         opacity: 0;
+     }
+ } 
