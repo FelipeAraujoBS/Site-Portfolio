@@ -1,65 +1,37 @@
-.mainAbout{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-size: 25px;
+.mainContainer{
     width: 100%;
-    height: 87%;
-    margin-top: 60px;    
-
-}
-.grid{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
-}
-.imgContainer{
-    width: 30%;
-    height: 80%;
-    margin-left: 60px;
-    margin-top: 25px;
-}
-
-.imgContainer .img{
-    width: 100%;
-    height: 100%;
-    border: 3px solid #D2042D;
-}
-
-.textContainer{
-    width: 60%;
     height: auto;
-    min-height: 96%;
-    margin-top: 50px;
-}
-.textContainer .table{
-    margin: 0 auto;
-    color: white;
-    height: 35%;
-    width: 70%;
+    min-height: 100%;
+  }
+  .tableOne{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    /* background-color: red; */
+    transform: translateX(0%);
+    animation: transitionTableOne 1s;
     text-align: center;
-    
+}
+.tableTwo{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    /* background-color: blue; */
+    transform: translateX(100%);
+    animation: transitionTableTwo 1s;
+    text-align: center;
+}
+.table{
+    margin: 0 auto;
+    width: 80%;
+    height: 60%;
+    font-size: 25px;
 }
 .h1Table{
-    font-size: 60px;
-    color: lightgray;
-    font-family: "Montserrat", sans-serif;
-}
-.h1-about{
-    color: white;
-    text-align: center;
-    font-size: 60px;
-    margin-top: 40px;
-    font-family: "Montserrat", sans-serif;
-}
-.pContainer{
-    width: 100%;
-    height: auto;
-    font-size: 30px;
-    color: white;
+    font-size: 45px;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    color: lightgray
 }
 .tdRed{
     border-left: 1px solid transparent;
@@ -75,88 +47,181 @@
     padding: 10px;
 } 
 
+@keyframes transitionTableTwo {
+    from{
+        transform: translateX(200%);
+       
+    }
+    to{
+        transform: translateX(100%);
+      
+    }
+}
+@keyframes transitionTableOne {
+    from{
+        transform: translateX(-100%)
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+  .tableContainer{
+      position: absolute;
+      width: 100%;
+      height: 45%;
+  }
+  .aboutContainer{
+      position: absolute;
+      /* background-color: red; */
+      width: 100%;
+      transform: translateY(64%);
+      height: 70%;
+      margin-top: 25px;
+  }
+  .imgContainer{
+      width: 37%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      /* background-color: blue; */
+      margin-left: 30px;
+  }
+  .imgContainer img{
+      width: 90%;
+      height: 90%;
+      margin-top: 30px;
+      margin-left: 10px;
+      border: 3px solid #D2042D;
+      border-radius: 50%;
+  }
+  .textContainer{
+      width: 60%;
+      min-height: 100%;
+      height: auto;
+      position: absolute;
+      right: 0;
+      /* background-color: pink; */
+      text-align: center;
+      font-size: 30px;
+  }
+  .h1-about{
+      margin-top: 60px;
+  }
+
+  
+
 
 
 @media only screen and (max-height: 980px){
-    .mainAbout{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        font-size: 25px;
-        width: 100%;
-        height: 85%;
-        margin-top: 52px;    
-    }
-    .grid{
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        height: 100%;
-        
-    }
-    .imgContainer{
-        width: 30%;
-        height: 80%;
-        margin-left: 50px;
-        margin-top: 20px;
-    }
-    .imgContainer .img{
-        width: 100%;
-        height: 100%;
-        border: 2px solid #D2042D;
-    }
-    .textContainer{
-        width: 69%;
-        right: 0;
-        height: auto;
-        min-height: 93%;
-        margin-top: 40px;
-    }
-    .textContainer .table{
-        margin: 0 auto;
-        width: 71%;
-        height: 35%;
-        color: white;
-        text-align: center;
-        margin-bottom: 30px;
-    }
-    .h1Table{
-        font-size: 45px;
-        margin-bottom: 20px;
-        color: lightgray
-    }
-    
-    .h1-about{
-        color: lightgray;
-        text-align: center;
-        font-size: 45px;
-        margin-top: -50px;
-        font-family: "Montserrat", sans-serif;
-        margin-bottom: 10px;
-        /* text-align: left;
-        margin-left: 142px; */
-    }
-    .pContainer{
-        font-size: 30px;
-        font-weight: bold;
-        width: 75%;
-        margin: 0 auto;
-        /* text-align: left; */
-    }
-    .tdRed{
-        border-left: 1px solid transparent;
-        border-right: 1px solid transparent;
-        border-top: 1px solid transparent;
-        border-radius: 5px;
-        width: 25%;
-        height: 40px;
-        background: rgba(128, 0, 32, 0.8);
-    }
-    .tdGray{
-        background-color: rgba(229, 228, 226, 0.5);
-        padding: 10px;
-    } 
+  .mainContainer{
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+  }
+  .tableOne{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    /* background-color: red; */
+    transform: translateX(0%);
+    animation: transitionTableOne 1s;
+    text-align: center;
 }
+.tableTwo{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    /* background-color: blue; */
+    transform: translateX(100%);
+    animation: transitionTableTwo 1s;
+    text-align: center;
+}
+.table{
+    margin: 0 auto;
+    width: 80%;
+    height: 60%;
+    font-size: 25px;
+}
+.h1Table{
+    font-size: 45px;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    color: lightgray
+}
+.tdRed{
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-top: 1px solid transparent;
+    border-radius: 5px;
+    width: 25%;
+    height: 40px;
+    background: rgba(128, 0, 32, 0.8);
+}
+.tdGray{
+    background-color: rgba(229, 228, 226, 0.5);
+    padding: 10px;
+} 
+
+@keyframes transitionTableTwo {
+    from{
+        transform: translateX(200%);
+       
+    }
+    to{
+        transform: translateX(100%);
+      
+    }
+}
+@keyframes transitionTableOne {
+    from{
+        transform: translateX(-100%)
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+  .tableContainer{
+      position: absolute;
+      width: 100%;
+      height: 45%;
+  }
+  .aboutContainer{
+      position: absolute;
+      /* background-color: red; */
+      width: 100%;
+      transform: translateY(64%);
+      height: 70%;
+      margin-top: 25px;
+  }
+  .imgContainer{
+      width: 37%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      /* background-color: blue; */
+      margin-left: 30px;
+  }
+  .imgContainer img{
+      width: 90%;
+      height: 90%;
+      margin-top: 30px;
+      margin-left: 10px;
+      border: 3px solid #D2042D;
+      border-radius: 50%;
+  }
+  .textContainer{
+      width: 60%;
+      min-height: 100%;
+      height: auto;
+      position: absolute;
+      right: 0;
+      /* background-color: pink; */
+      text-align: center;
+      font-size: 30px;
+  }
+  .h1-about{
+      margin-top: 60px;
+  }
+}
+  
 

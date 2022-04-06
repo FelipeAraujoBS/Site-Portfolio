@@ -5,14 +5,10 @@ import myFoto from "../../images/foto.jpeg"
 
 function About() {
     return (
-
         <div className="mainAbout">
-            <div className="grid">
-                <div className="imgContainer">
-                <img className="img" src={myFoto} alt="foto" />
-                </div>
-                <div className="textContainer">
-                    <h1 class="h1Table">Tecnologias</h1>
+            <div className="tableContainer">
+                <div class="tableOne">
+                <h1 class="h1Table">Competências</h1>
                     <table className="table">
                         <tr>
                             <td className="tdRed"><b>Front End</b></td>
@@ -31,10 +27,38 @@ function About() {
                             <td className="tdGray">Git, Agile(Scrum)</td>
                         </tr>
                     </table>
-                    <br/>
-                    <br/>
+                </div>
+                <div class="tableTwo">
+                <h1 class="h1Table">Tecnologias</h1>
+                    <table className="table">
+                        <tr>
+                            <td className="tdRed"><b>Front End</b></td>
+                            <td className="tdGray">JavaScript, React, CSS3, HTML5, Bootstrap</td>
+                        </tr>
+                        <tr>
+                            <td className="tdRed"><b>Back End</b></td>
+                            <td className="tdGray">NodeJS</td>
+                        </tr>
+                        <tr>
+                            <td className="tdRed"><b>Data Storage</b></td>
+                            <td className="tdGray">MongoDB, MySQL</td>
+                        </tr>
+                        <tr>
+                            <td className="tdRed"><b>Tools</b></td>
+                            <td className="tdGray">Git, Agile(Scrum)</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+            <div className="aboutContainer">
 
-                    <h1 className="h1-about">Sobre mim </h1>
+                <div className="imgContainer">
+                    <img className="img" src={myFoto} alt="foto"/>
+                </div>
+
+                <div className="textContainer">
+                <h1 className="h1-about">Sobre mim </h1>
                     <p className="pContainer">
                         Tenho 24 anos e sou de Salvador-BA.
                         Estudante de Eng. de Software, apaixonado por tecnologia, me encontrei programando em
@@ -43,6 +67,7 @@ function About() {
                         cada dia mais.
                     </p>  
                 </div>
+
             </div>
         </div>
 

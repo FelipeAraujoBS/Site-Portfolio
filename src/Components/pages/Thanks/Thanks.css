@@ -1,0 +1,47 @@
+.thanksContainer{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    margin-top: 40px;
+    /* background-color: blue; */
+}
+.writteContainer{
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    margin-top: 5%;
+    transform: translateX(35%);
+    /* background-color: black; */
+    text-align: center;
+    
+}
+.writteContainer h1{
+    font-size: 100px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    
+}
+.writteContainer h2{
+    margin-top: 10px;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.btnContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+}
+.btnContainer a{
+    font-size: 50px;
+    z-index: 999;
+    border: 1px solid white;
+    padding: 10px;
+    background-color: black;
+}
+.btnContainer:hover a{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}

@@ -41,10 +41,16 @@
     justify-content: center;
     align-items: center;
     font-size: 30px;
-    margin-top: -20px;
+    transform: scale(0.9);
+
 }
 .ProjectRow--item img:hover{
     transform: scale(1);
+}
+.ProjectRow--listarea:hover p {
+    transform: scale(1);
+    color: greenyellow;
+    font-weight: bold;
 }
 .ProjectRow--left,
 .ProjectRow--right{
@@ -116,7 +122,6 @@
         justify-content: center;
         align-items: center;
         font-size: 30px;
-        margin-top: -20px;
     }
     .ProjectRow--item img:hover{
         transform: scale(1);

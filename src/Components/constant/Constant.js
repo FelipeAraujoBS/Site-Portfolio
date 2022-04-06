@@ -4,6 +4,7 @@ import Home from "../pages/Home/Home"
 import About from "../pages/About/About"
 import Projects from "../pages/Projects/Projects"
 import Contact from "../pages/Contact/Contact"
+import Thanks from '../pages/Thanks/Thanks'
 
 function Constant(){
     return (
@@ -44,6 +45,9 @@ function Constant(){
             </Route>
             <Route path="/Projects">
                 <Projects/>
+            </Route>
+            <Route path="/Thanks">
+                <Thanks/>
             </Route>
         </Switch>
       </Router>

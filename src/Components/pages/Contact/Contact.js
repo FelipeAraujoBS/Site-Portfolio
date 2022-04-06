@@ -25,7 +25,9 @@ function Contact(){
                 </div>
                 <div className="emailContainer">
                     <h2>Me mande um Email</h2>
-                    <form action="">
+                    <form action="https://formsubmit.co/2865255911cb22920d0a57571733c0a7 " method="POST">
+                    <input type="hidden" name="_next" value="http://localhost:3000/Thanks"/>
+                    <input type="hidden" name="_captcha" value="false"/>
                         <div className="inputContainer">
                             <input type="text" name="Name" placeholder='Nome' required/> <br/>
                             <input type="email" name="Email" placeholder='Email' required/> <br/>
