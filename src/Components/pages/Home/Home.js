@@ -1,17 +1,18 @@
 import "./Home.css"
+import praia from "../../images/praia.jpg"
+import foto from "../../images/fotoHome.png"
 
 function Home(){
     return (
        <div>
         <div className="mainHome">
-            
-                <h1 className="h1-home">Felipe <span className="span">Araújo</span></h1>
-                    <br/>
-                    <p>
-                        Olá, eu sou um Desenvolver Web com uma grande paixão por aprender. <br/>
-                        Posso ajudar o seu negocio desenvolvendo websites, e assim <br/> torna-lo bem sucedido ao
-                        longo prazo. <br/> <br/> Focado, atualmente, no <span className="span">desenvolvimento front-end</span>.
-                    </p>
+            <div className="imgHome">
+                <img className="img" src={foto} alt="praia"/>
+            </div>
+            <div className="textHome">
+                <h1>Felipe <span className="span">Araújo</span></h1>
+                <h2>Web developer</h2>
+            </div>
         </div>
        </div>
     )

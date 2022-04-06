@@ -33,7 +33,7 @@ function Contact(){
                             <input type="email" name="Email" placeholder='Email' required/> <br/>
                         </div>
                         <div className="textareaContainer">
-                            <textarea name="Message" placeholder='Messagem' required/> <br/>
+                            <textarea name="Message" placeholder='Mensagem' required/> <br/>
                             <button type='submit'> Enviar </button>
                         </div>
                     </form>

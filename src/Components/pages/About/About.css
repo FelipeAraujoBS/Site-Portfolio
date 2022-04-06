@@ -27,6 +27,18 @@
     height: 60%;
     font-size: 25px;
 }
+.table1{
+    margin: 0 auto;
+    width: 80%;
+    height: 60%;
+    font-size: 25px;
+}
+.table2{
+    margin: 0 auto;
+    width: 80%;
+    height: 60%;
+    font-size: 25px;
+}
 .h1Table{
     font-size: 45px;
     margin-top: 35px;
@@ -45,6 +57,12 @@
 .tdGray{
     background-color: rgba(229, 228, 226, 0.5);
     padding: 10px;
+    font-size: 30px;
+}
+.tdGray1{
+    background-color: rgba(229, 228, 226, 0.5);
+    padding: 10px;
+    font-size: 25px;
 } 
 
 @keyframes transitionTableTwo {
@@ -105,7 +123,8 @@
       font-size: 30px;
   }
   .h1-about{
-      margin-top: 60px;
+      margin-top: 250px;
+      color: lightgray;
   }
 
   
@@ -142,6 +161,12 @@
     height: 60%;
     font-size: 25px;
 }
+.table2{
+    margin: 0 auto;
+    width: 80%;
+    height: 78%;
+    font-size: 25px;
+}
 .h1Table{
     font-size: 45px;
     margin-top: 35px;
@@ -160,8 +185,13 @@
 .tdGray{
     background-color: rgba(229, 228, 226, 0.5);
     padding: 10px;
+    font-size: 25.3px;
 } 
-
+.tdGray1{
+    background-color: rgba(229, 228, 226, 0.5);
+    padding: 10px;
+    font-size: 25px;
+}
 @keyframes transitionTableTwo {
     from{
         transform: translateX(200%);
@@ -221,6 +251,7 @@
   }
   .h1-about{
       margin-top: 60px;
+      color: lightgray;
   }
 }
   
