@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Montserrat:wght@200&display=swap');
-
 .mainHome{
     position: absolute;
     top: 50%;
@@ -8,99 +6,84 @@
     text-align: center;
     font-size: 35px;
     width: 100%;
-    height: 90%;
+    height: auto;
+    min-height: 86%;
     margin-top: 60px;
-    /* background-color: yellow; */
     overflow-y: hidden;
 }
 .imgHome{
  position: absolute;
  width: 40%;
- height: 100%;
- margin-top: 70px;
+ height: 90%; 
+ bottom: 0;
  right: 0;
- margin-right: 60px;
- /* background-color: blue; */
 }
 .imgHome .img{
     position: absolute;
     bottom: 0;
     right: 8%;
-    height: 140%;
+    height: 150%;
     width: 125%;
-
 }
 .textHome{
     position: absolute;
-    /* background-color: green; */
-    width: 40%;
-    height: 40%;
-    margin-top: 600px;
-    margin-left: 60px;
+    width: 650px;
+    height: 250px;
+    transform: translate(20%, 250%);
     left: 0;
     color: white;
 }
 .textHome h1{
-   margin-top: 60px;
-   margin-left: -150px;
-   font-size: 100px;
-   font-family: "Montserrat", sans-serif;
-}
-.textHome h2{
-    font-size: 60px;
-    margin-left: -310px;
+    text-align: left;
+    font-size: 100px;
     font-family: "Montserrat", sans-serif;
-}
+ }
+ .textHome h2{
+     font-size: 60px;
+     text-align: left;
+     font-family: "Montserrat", sans-serif;
+ }
 
-@media only screen and (max-height: 1080px){
-    .mainHome{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        font-size: 35px;
-        width: 100%;
-        height: 86%;
-        margin-top: 60px;
-         /* background-color: yellow;  */
-        overflow-y: hidden;
-    }
-    .imgHome{
-        position: absolute;
-        /* background-color: blue;  */
-        width: 50%;
-        height: 100%;
-        bottom: 0;
-        right: 0;
-        margin-right: 80px;
-    }
-    .imgHome .img{
-        width: 100%;
-        height: 135%;
-        right: 0%;
-    }
-    .textHome{
-        position: absolute;
-        /* background-color: green;  */
-        width: 40%;
-        height: 40%;
-        margin-top: 320px;
-        margin-left: 140px;
-        left: 0;
-        color: white;
-    }
-    .textHome h1{
-       margin-left: -220px;
-       font-size: 80px;
-       font-family: "Montserrat", sans-serif;
-    }
-    .textHome h2{
-        font-size: 50px;
-        margin-left: -335px;
-        font-family: "Montserrat", sans-serif;
-    }
-}
  
 
-    
+@media only screen and (max-height: 1000px){
+    .textHome{
+        transform: translate(15%, 200%);
+    }
+    .textHome h1{
+        font-size: 80px;
+    }
+    .textHome h2{
+        font-size: 45px;
+    }
+}
+
+
+@media only screen and (max-height: 900px){
+    .textHome{
+       transform: translate(20%, 175%);
+    }
+    .textHome h1{
+        font-size: 80px;
+    }
+    .textHome h2{
+        font-size: 45px;
+    }
+}
+
+@media only screen and (max-height: 800px){
+    .mainHome{
+        min-height: 81%;
+    }
+    .textHome{
+        width: 450px;
+        height: 150px;
+        transform: translate(20%, 200%);
+    }
+    .textHome h1{
+        font-size: 60px;
+    }
+    .textHome h2{
+        font-size: 35px;
+    }
+}

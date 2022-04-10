@@ -1,6 +1,5 @@
 import "./About.css"
-import myFoto from "../../images/foto.jpeg"
-
+import jsCode from "../../images/jscode.jpeg"
 
 
 function About() {
@@ -9,7 +8,7 @@ function About() {
             <div className="tableContainer">
                 <div class="tableOne">
                 <h1 class="h1Table">Competências</h1>
-                    <table className="table">
+                    <table className="table1">
                         <tr>
                             <td className="tdRed"><b>Proatividade</b></td>
                             <td className="tdGray1">Sempre em busca de mudança, faço tudo para aperfeiçoar meu trabalho</td>
@@ -54,7 +53,7 @@ function About() {
             <div className="aboutContainer">
 
                 <div className="imgContainer">
-                    <img className="img" src={myFoto} alt="foto"/>
+                    <img className="img" src={jsCode} alt="foto"/>
                 </div>
 
                 <div className="textContainer">

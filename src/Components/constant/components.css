@@ -10,6 +10,7 @@
     position: relative;
     z-index: 1;
     height: 10%;
+    height: 70px;
  }
  nav{
      display: flex;

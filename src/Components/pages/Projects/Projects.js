@@ -42,54 +42,51 @@ function Projects(){
                     <NavigateNextIcon className="Arrow--right" style={{fontSize: 80}}/>
                 </div>
                 
-                <div className="ProjectRow--list" style={{
-                    marginLeft: scrollX,
-                    width: (window.innerWidth * 4) + (window.innerWidth / 2)
-                }}>
+                <div className="ProjectRow--list" style={{marginLeft: scrollX}}>
                     <div className="ProjectRow--item">
                         <div>
                             <a href="https://github.com/FelipeAraujoBS/MoveT--NetflixClone/tree/master" 
-                            target="__blank"><img src={MoveT1} alt="praia"/></a>
+                            target="__blank"><img src={MoveT1} alt="MoveT"/></a>
                             <p>MoveT</p>
                         </div>
                         <div>
                             <a href="https://github.com/FelipeAraujoBS/MoveT--NetflixClone/tree/master" 
-                            target="__blank"><img src={MoveT2} alt="praia"/></a>
+                            target="__blank"><img src={MoveT2} alt="MoveT"/></a>
                             <p>MoveT</p>
                         </div>
                         <div>
                             <a href="https://github.com/FelipeAraujoBS/MoveT--NetflixClone/tree/master" 
-                            target="__blank"><img src={MoveT3} alt="praia"/></a>
+                            target="__blank"><img src={MoveT3} alt="MoveT"/></a>
                             <p>MoveT</p>
                         </div>
                         <div>
                             <a href="https://github.com/FelipeAraujoBS/FlappyBirdClone/tree/master"
-                            target="__blank"><img src={Flappy1} alt="praia"/></a>
+                            target="__blank"><img src={Flappy1} alt="Flappybird"/></a>
                             <p>FlappyBird</p>
                         </div>
                         <div>
                             <a href="https://github.com/FelipeAraujoBS/FlappyBirdClone/tree/master"
-                            target="__blank"><img src={Flappy2} alt="praia"/></a>
+                            target="__blank"><img src={Flappy2} alt="Flappybird"/></a>
                             <p>FlappyBird</p>
                         </div>
                         <div>
                             <a href="https://github.com/FelipeAraujoBS/FlappyBirdClone/tree/master"
-                            target="__blank"><img src={Flappy3} alt="praia"/></a>
+                            target="__blank"><img src={Flappy3} alt="Flappybird"/></a>
                             <p>FlappyBird</p>
                         </div>
                         <div>
                             <a href="https://github.com/FelipeAraujoBS/Bounce-Balls/tree/master" 
-                            target="__blank"><img src={Bounce1} alt="praia"/></a>
+                            target="__blank"><img src={Bounce1} alt="Bounce"/></a>
                             <p>Bounce-Balls</p>
                         </div>
                         <div>
                             <a href="https://github.com/FelipeAraujoBS/Bounce-Balls/tree/master" 
-                            target="__blank"><img src={Bounce2} alt="praia"/></a>
+                            target="__blank"><img src={Bounce2} alt="Bounce"/></a>
                             <p>Bounce-Balls</p>
                         </div>
                         <div>
                             <a href="https://github.com/FelipeAraujoBS/Bounce-Balls/tree/master" 
-                            target="__blank"><img src={Bounce3} alt="praia"/></a>
+                            target="__blank"><img src={Bounce3} alt="Bounce"/></a>
                             <p>Bounce-Balls</p>
                         </div>
                     </div>

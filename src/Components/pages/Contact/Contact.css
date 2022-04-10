@@ -1,67 +1,42 @@
 .main{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-size: 25px;
     width: 100%;
-    height: auto;
-    min-height: 100%;
-    /* background-color: yellow; */
-}
-.header{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 15%;
-    /* background-color: blue; */
+    height: 86%;
+    bottom: 0;
 }
 .Contact{
     position: absolute;
-    bottom: 0;
     width: 100%;
-    height: 85%;
-    /* background-color: red;*/
-} 
-.h2{
-    margin-top: 25px;
-    margin-left: 40px;
-    text-align: left;
+    height: 50%;
 }
-.p{
-    text-align: left;
-    margin-left: 40px;
-}
+/*contactContainer*/
+
 .contactContainer{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 45%;
-    /* background-color: pink; */
-    text-align: left;
+   position: absolute;
+   width: 50%;
+   height: 100%;
+   left: 0;
 }
 .contactContainer h2{
-    font-size: 60px;
+    font-size: 70px;
+    margin-top: 25px;
     color: white;
     font-weight: bold;
-    font-family: "Montserrat", sans-serif;
+    margin-left: 10px;
+    font-family: "Monteserrat", sans-serif;
 }
 .contactContainer p{
-    font-size: 35px;
-    font-weight: bold;
+    font-size: 40px;
+    margin-left: 12px;
 }
 .contactContainer ul li{
     display: inline-block;
-    padding-left: 20px;
 }
 .contactContainer ul li a img{
-    width: 75px;
-    height: 75px;
-    margin-top: 50px;
-    margin-left: 27px;
+    width: 150px;
+    height: 150px;
+    margin-top: 100px;
+    margin-left: 10px;
     margin-bottom: -6px;
     transform: scale(1);
 }
@@ -69,58 +44,112 @@
     transform: scale(0.8);
 }
 .contactContainer ul li a{
-    font-size: 30px;
+    font-size: 45px;
     font-weight: bold;
 }
 .contactContainer ul li a:hover{
     transition: .4s;
     color: #ea1538;
 }
+
+/*cContainer*/
+.cContainer{
+position: absolute;
+width: 50%;
+height: 100%;
+right: 0;
+}
+.cContainer h3{
+    font-size: 70px;
+    color: white;
+    font-weight: bold;
+    font-family: "Monteserrat", sans-serif;
+    margin-top: 20px;
+    margin-left: 20px
+}
+.cContainer p{
+    font-size: 40px;
+    color: white;
+    margin-left: 22px;
+}
+.cContainer img{
+    width: 150px;
+    height: 150px;
+    margin-top: 120px;
+    margin-left: 10px;
+    margin-bottom: -8px;
+    transform: scale(1);
+}
+.cContainer .button{
+    width: 410px;
+    height: 125px;
+    transform: translateY(-45%);
+    margin-left: 10px;
+    font-size: 30px;
+}
+.cContainer .hoverble:hover img{
+    transform: scale(0.8);
+}
+
+/*emailContainer*/
 .emailContainer{
     position: absolute;
-    bottom: 0;
     width: 100%;
-    height: 55%;
-    text-align: left;
-    /* background-color: green; */
+    height: 50%;
+    bottom: 0;
+    /* background-color: yellow; */
 }
 .emailContainer h2{
-    font-size: 55px;
-    margin-top: 20px;
+    font-size: 70px;
+    margin-top: 15px;
     color: white;
     font-weight: bold;
     font-family: "Montserrat", sans-serif;
-    margin-left: 30px;
-}
-form{
-    width: 100%;
-    height: 78%;
-    /* background-color: yellow; */
-}
-input{
-    width: 410px;
-    height: 70px;
-    margin-top: 20px;
     margin-left: 10px;
-    margin-bottom: 10px;
+}
+.textareaContainer{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 75%;
+    height: 100%;
+}
+.textareaContainer .textarea{
+    width: 600px;
+    height: 250px;
+    margin-top: 85px;
+    transform: translateY(25%);
+    margin-left: 10px;
+    border: 1px solid #ea1538;
+    background: linear-gradient(to right, #800020, #28282B, #000000);
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+.textareaContainer .button{
+    margin-left: 10px;
+    transform: translateY(124%);
+}
+.inputContainer{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30%;
+    height: 100%;
+}
+.inputContainer .input{
+    width: 450px;
+    height: 100px;
+    margin-top: 30px;
+    margin-left: 20px;
+    transform: translateY(123%);
     font-size: 25px;
     font-weight: bold;
     color: white;
     background: linear-gradient(to right, #800020, #28282B, #000000);
     border: 1px solid #ea1538;
 }
-textarea{
-    width: 550px;
-    height: 170px;
-    margin-top: 18px;
-    border: 1px solid #ea1538;
-    background: linear-gradient(to right, #800020, #28282B, #000000);
-    font-size: 25px;
-    font-weight: bold;
-    color: white;
-    margin-left: 3.5%;
-}
-button{
+.button{
     width: 120px;
     height: 50px;
     background-color: rgba(0, 0, 0, 0.8);
@@ -130,31 +159,177 @@ button{
     border: 1px solid #ea1538;
     border-radius: 5px;
     cursor: pointer;
-    margin-left: 3.5%;
 }
-button:hover{
+.button a{
+    color: red;
+}
+.button:hover{
     background-color: white;
 }
-.inputContainer{
-    position: absolute;
-    left: 0;
-    width: 20%;
-    height: 50%;
-    margin-left: 1.2%;
-    margin-top: 25px;
-}
-.textareaContainer{
-    position: absolute;
-    right: 0;
-    width: 80%;
-    height: 60%;
-    margin-top: 25px;
-}
-@media only screen and (max-height: 1080px)  {
-    textarea{
-        margin-left: 12%;
+
+
+@media only screen and (max-height: 1000px){
+    .main{
+        overflow-y: hidden;
     }
-    button{
-        margin-left: 12%;
+    /*contacContainer*/
+
+    .contactContainer h2{
+        font-size: 60px;
+        margin-top: 20px;
+    }
+    .contactContainer p{
+        font-size: 40px;
+        margin-left: 10px;
+    }
+    .contactContainer ul li a img{
+        width: 100px;
+        height: 100px;
+        margin-top: 80px;
+    }
+    .contactContainer ul li a{
+        font-size: 30px;
+    }
+
+    /*cContainer*/
+
+    .cContainer h3{
+        font-size: 60px;
+    }
+    .cContainer p{
+        font-size: 40px;
+    }
+    .cContainer img{
+        width: 100px;
+        height: 100px;
+        margin-top: 80px;
+        margin-bottom: -1px;
+    }
+    .cContainer .button{
+        width: 300px;
+        height: 75px;
+    }
+
+    /*emailContainer*/
+
+    .emailContainer{
+        height: 50%;
+    }
+    .emailContainer h2{
+        font-size: 60px;
+        margin-top: 30px;
+    }
+    .textareaContainer{
+        width: 75%;
+        margin-top: 40px;
+    }
+    .textareaContainer .textarea{
+        width: 550px;
+        height: 140px;
+        margin-top: 52px;
+    }
+    .textareaContainer .button{
+        margin-left: 10px;
+        margin-top: -15px;
+        transform: translateY(100%);
+    }
+    .inputContainer{
+        margin-top: 40px;
+        width: 40%;
+        height: 100%;
+    }
+    .inputContainer .input{
+        width: 410px;
+        height: 50px;
+        transform: translateY(120%);
+    }
+    .Thanks{
+        /* background-color: blue; */
+        width: 400px;
+        height: 70px;
+        font-size: 25px;
+        text-align: center;
+        color: white;
+        margin-top: 170px;
+        margin-left: 590px;
+        display: none;
+    }
+}
+
+@media only screen and (max-height: 900px){
+    .textareaContainer{
+        width: 72%;
+    }
+}
+
+@media only screen and (max-height: 800px){
+   
+    .contactContainer h2{
+        font-size: 45px;
+        margin-top: 20px;
+        
+    }
+    .contactContainer p{
+        font-size: 30px;
+        margin-left: 10px;
+    }
+    .contactContainer ul li a img{
+        width: 75px;
+        height: 75px;
+        margin-top: 62.5px;
+    }
+    .contactContainer ul li a{
+        font-size: 30px;
+   }
+    .cContainer h3{
+        font-size: 45px;
+    }
+    .cContainer p{
+        font-size: 30px;
+    }
+    .cContainer img{
+        width: 75px;
+        height: 75px;
+        margin-top: 60px;
+        margin-bottom: -1px;
+    }
+    .cContainer .button{
+        width: 300px;
+        height: 75px;
+        margin-left: 10px;
+    }
+    .cContainer .hoverble:hover img{
+        transform: scale(0.8);
+    }
+
+    /*emailContainer*/
+    .emailContainer{
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        bottom: 0;
+    }
+    .emailContainer h2{
+        font-size: 45px;
+    }
+    .textareaContainer{
+        width: 65%;
+
+    }
+    .textareaContainer .textarea{
+        width: 550px;
+        height: 140px;
+        margin-top: 10px;
+    }
+    .textareaContainer .button{
+        margin-left: 10px;
+        transform: translateY(100%);
+    }
+
+    .inputContainer .input{
+        width: 410px;
+        height: 50px;
+        margin-top: 20px;
+        transform: translateY(70%);
     }
 }

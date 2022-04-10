@@ -1,50 +1,64 @@
 .mainContainer{
-    width: 100%;
+    width: 100vw;
     height: auto;
     min-height: 100%;
-  }
-  .tableOne{
+}
+.tableContainer{
     position: absolute;
+    width: 100%;
+    height: 55%;
+    margin-top: 60px;
+    text-align: center;
+}
+.tableOne{
+    position: absolute;
+    transform: translateX(0%);
     width: 50%;
     height: 100%;
-    /* background-color: red; */
-    transform: translateX(0%);
-    animation: transitionTableOne 1s;
-    text-align: center;
+    max-height: 100%;
+    animation: transitionOne 1.3s;
 }
 .tableTwo{
     position: absolute;
+    transform: translateX(100%);
     width: 50%;
     height: 100%;
-    /* background-color: blue; */
-    transform: translateX(100%);
-    animation: transitionTableTwo 1s;
-    text-align: center;
+    max-height: 100%;
+    animation: transitionTwo 1.3s;
 }
-.table{
-    margin: 0 auto;
-    width: 80%;
-    height: 60%;
-    font-size: 25px;
+@keyframes transitionOne {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
 }
-.table1{
-    margin: 0 auto;
-    width: 80%;
-    height: 60%;
-    font-size: 25px;
+@keyframes transitionTwo {
+    from{
+        transform: translateX(200%);
+    }
+    to{
+        transform: translateX(100%);
+    }
 }
+
+.h1Table{
+    font-size: 60px;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    color: lightgray;
+}
+
+.table1, 
 .table2{
     margin: 0 auto;
     width: 80%;
     height: 60%;
     font-size: 25px;
+    color: white;
 }
-.h1Table{
-    font-size: 45px;
-    margin-top: 35px;
-    margin-bottom: 10px;
-    color: lightgray
-}
+
 .tdRed{
     border-left: 1px solid transparent;
     border-right: 1px solid transparent;
@@ -53,206 +67,107 @@
     width: 25%;
     height: 40px;
     background: rgba(128, 0, 32, 0.8);
+    color: #000;
 }
 .tdGray{
     background-color: rgba(229, 228, 226, 0.5);
-    padding: 10px;
+    padding: 5px;
+    font-size: 25px;
+}
+.tdGray1{
+    background-color: rgba(229, 228, 226, 0.5);
+    padding: 15px;
+    font-size: 25px;
+} 
+
+.aboutContainer{
+    position: absolute;
+    width: 100%;
+    min-height: 70%;
+    transform: translateY(87%);
+    margin-top: 9px;
+}
+.imgContainer{
+    position: absolute;
+    left: 0;
+    width: 35%;
+    height: 90%;
+    margin-left: 3%;
+}
+.imgContainer .img{
+    width: 90%;
+    height: 90%;
+    border: 3px solid #D2042D;
+    border-radius: 50%;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.textContainer{
+    position: absolute;
+    right: 0;
+    width: 60%;
+    height: 90%;
+    text-align: center;
     font-size: 30px;
 }
-.tdGray1{
-    background-color: rgba(229, 228, 226, 0.5);
-    padding: 10px;
-    font-size: 25px;
-} 
+.h1-about{
+    margin-top: 8%;
+    color: lightgray;
+    font-size: 80px;
+    margin-bottom: 30px;
+}
 
-@keyframes transitionTableTwo {
-    from{
-        transform: translateX(200%);
-       
+@media only screen and (max-height: 900px){
+    .h1Table{
+        margin-top: 25px;
     }
-    to{
-        transform: translateX(100%);
-      
+    .table1,
+    .table2{
+        height: 75%;
+        width: 75%;
+        font-size: 20px;
+    }
+    .table1{
+        max-height: 75%;
+    }
+    .tdGray{
+        font-size: 25px;
+        padding: 5px;
+    }
+    .tdGray1{
+        font-size: 25px;
+        padding: 5px;
     }
 }
-@keyframes transitionTableOne {
-    from{
-        transform: translateX(-100%)
-    }
-    to{
-        transform: translateX(0%);
-    }
-}
-  .tableContainer{
-      position: absolute;
-      width: 100%;
-      height: 45%;
-  }
-  .aboutContainer{
-      position: absolute;
-      /* background-color: red; */
-      width: 100%;
-      transform: translateY(64%);
-      height: 70%;
-      margin-top: 25px;
-  }
-  .imgContainer{
-      width: 37%;
-      height: 100%;
-      position: absolute;
-      left: 0;
-      /* background-color: blue; */
-      margin-left: 30px;
-  }
-  .imgContainer img{
-      width: 90%;
-      height: 90%;
-      margin-top: 30px;
-      margin-left: 10px;
-      border: 3px solid #D2042D;
-      border-radius: 50%;
-  }
-  .textContainer{
-      width: 60%;
-      min-height: 100%;
-      height: auto;
-      position: absolute;
-      right: 0;
-      /* background-color: pink; */
-      text-align: center;
-      font-size: 30px;
-  }
-  .h1-about{
-      margin-top: 250px;
-      color: lightgray;
-  }
 
-  
-
-
-
-@media only screen and (max-height: 980px){
-  .mainContainer{
-    width: 100%;
-    height: auto;
-    min-height: 100%;
-  }
-  .tableOne{
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    /* background-color: red; */
-    transform: translateX(0%);
-    animation: transitionTableOne 1s;
-    text-align: center;
-}
-.tableTwo{
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    /* background-color: blue; */
-    transform: translateX(100%);
-    animation: transitionTableTwo 1s;
-    text-align: center;
-}
-.table{
-    margin: 0 auto;
-    width: 80%;
-    height: 60%;
-    font-size: 25px;
-}
-.table2{
-    margin: 0 auto;
-    width: 80%;
-    height: 78%;
-    font-size: 25px;
-}
-.h1Table{
-    font-size: 45px;
-    margin-top: 35px;
-    margin-bottom: 10px;
-    color: lightgray
-}
-.tdRed{
-    border-left: 1px solid transparent;
-    border-right: 1px solid transparent;
-    border-top: 1px solid transparent;
-    border-radius: 5px;
-    width: 25%;
-    height: 40px;
-    background: rgba(128, 0, 32, 0.8);
-}
-.tdGray{
-    background-color: rgba(229, 228, 226, 0.5);
-    padding: 10px;
-    font-size: 25.3px;
-} 
-.tdGray1{
-    background-color: rgba(229, 228, 226, 0.5);
-    padding: 10px;
-    font-size: 25px;
-}
-@keyframes transitionTableTwo {
-    from{
-        transform: translateX(200%);
-       
+@media only screen and (max-height: 800px){
+    .h1Table{
+        margin-top: 10px;
     }
-    to{
-        transform: translateX(100%);
-      
+    .table1,
+    .table2{
+        width: 90%;
+        height: 75%;
+        max-height: 75%;
+        margin: 0 auto;
+    }
+    .tdGray{
+        font-size: 20px;
+    }
+    .tdGray1{
+        font-size: 20px;
+    }
+    .aboutContainer{
+        margin-top: 30px;
+    }
+    .imgContainer{
+        margin-left: 10px;
+        margin-top: 35px;
+    }
+    .textContainer{
+        font-size: 25px;
+    }
+    .h1-about{
+        font-size: 60px;
     }
 }
-@keyframes transitionTableOne {
-    from{
-        transform: translateX(-100%)
-    }
-    to{
-        transform: translateX(0%);
-    }
-}
-  .tableContainer{
-      position: absolute;
-      width: 100%;
-      height: 45%;
-  }
-  .aboutContainer{
-      position: absolute;
-      /* background-color: red; */
-      width: 100%;
-      transform: translateY(64%);
-      height: 70%;
-      margin-top: 25px;
-  }
-  .imgContainer{
-      width: 37%;
-      height: 100%;
-      position: absolute;
-      left: 0;
-      /* background-color: blue; */
-      margin-left: 30px;
-  }
-  .imgContainer img{
-      width: 90%;
-      height: 90%;
-      margin-top: 30px;
-      margin-left: 10px;
-      border: 3px solid #D2042D;
-      border-radius: 50%;
-  }
-  .textContainer{
-      width: 60%;
-      min-height: 100%;
-      height: auto;
-      position: absolute;
-      right: 0;
-      /* background-color: pink; */
-      text-align: center;
-      font-size: 30px;
-  }
-  .h1-about{
-      margin-top: 60px;
-      color: lightgray;
-  }
-}
-  
-
