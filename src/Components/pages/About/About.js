@@ -58,8 +58,7 @@ function About() {
 
                 <div className="textContainer">
                 <h1 className="h1-about">Sobre mim </h1>
-                    <p className="pContainer">
-                    <p>
+                        <p>
                         Tenho 24 anos e sou de Salvador-BA.
                         Estudante de Eng. de Software, apaixonado por tecnologia, me encontrei programando em JavaScript. 
                         <br/>
@@ -67,8 +66,7 @@ function About() {
                         Domino algumas das principais tecnologias do mercado, e estou ansioso para aprender cada dia mais.
                          <br/>
                         Posso ajudar o seu negocio desenvolvendo websites, tornando-o bem sucedido a longo prazo. <br/> <br/> Focado, atualmente, no <span className="span">desenvolvimento front-end</span>.
-                    </p>
-                    </p>  
+                        </p>
                 </div>
 
             </div>

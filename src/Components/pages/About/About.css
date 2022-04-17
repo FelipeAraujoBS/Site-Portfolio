@@ -301,9 +301,11 @@ body{
     }
 }
 
-@media (max-width: 900px){
+ @media (max-width: 900px){
     .tableContainer{
-        height: 60%;
+        width: 100vw;
+        height: 60vh;
+        margin-top: 30px;
     }
     .tableOne{
         position: absolute;
@@ -311,7 +313,21 @@ body{
         top: 0;
         width: 100%;
         height: 50%;
+        padding: 1%;
         animation: transitionOneMobile 0.9s;
+    }
+    .h1Table1,
+    .h1Table2{
+        margin-top: 2%;
+        font-size: 40px;
+    }
+    .tdGray{
+        background-color: rgba(229, 228, 226, 0.5);
+        font-size: 20px;
+    }
+    .tdGray1{
+        background-color: rgba(229, 228, 226, 0.5);
+        font-size: 20px;
     }
     .tableTwo{
         position: absolute;
@@ -319,232 +335,172 @@ body{
         bottom: 0;
         width: 100%;
         height: 50%;
+        padding: 1%;
         animation: transitionTwoMobile 0.9s;
     }
-    .h1Table{
-        font-size: 40px;
-        margin-top: 10px;
-        margin-bottom: 3px;
-    }
-    .table1,
-    .table2{
-        width: 85%;
-        font-size: 20px;
-    }
-
-    .tdGray{
-        font-size: 20px;
-    }
-    .tdGray1{
-        font-size: 20px;
-    }
-
     .aboutContainer{
-        height: 40%;
-        margin-top: 55px;
+        width: 100vw;
+        height: 40vh;
     }
     .imgContainer .img{
         width: 90%;
         height: 50%;
         transform: translate(0%, 0%);
-        margin-left: -10px;
-        margin-top: 150px;
+        margin-left: -1%;
+        margin-top: 50%;
     }
     .h1-about{
         font-size: 40px;
-        margin-top: 150px;
+        margin-top: 25%;
+        padding-right: 1rem;
     }
     .textContainer p{
         font-size: 20px;
+        padding-right: 1rem;
     }
-    @keyframes transitionOneMobile {
-        from{
-            transform: translateX(-100%);
-        }
-        to{
-            transform: translateX(0%);
-        }
-    }
-    @keyframes transitionTwoMobile {
-        from{
-            transform: translateX(-100%);
-        }
-        to{
-            transform: translateX(0%);
-        }
-    }
-}
+} 
 
-@media (max-width: 630px){
+@media (max-width: 600px){
     .tableContainer{
-        height: auto;
-        min-height: 100vh;
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
+
     }
     .tableOne{
         position: absolute;
-        transform: translateX(0%);
+        transform: translateY(10%);
         top: 0;
         width: 100%;
-        height: 52%;
-        animation: transitionOneMobile 0.9s;
-        margin-top: -30px;
+        height: 50%;
+
     }
     .tableTwo{
         position: absolute;
-        transform: translateX(0%);
-        bottom: 0;
+        transform: translateY(10%);
         width: 100%;
-        height: 52%;
-        animation: transitionTwoMobile 0.9s;
+        height: 50%;
     }
     .h1Table1{
         font-size: 40px;
-        margin-top: -25px;
         color: lightgray;
     }
     .h1Table2{
         font-size: 40px;
-        margin-top: -140px;
         color: lightgray;
+        margin-top: -20%;
     }
     .table1,
     .table2{
         width: 100%;
-        font-size: 18px;
+        font-size: 20px;
     }
-
     .tdGray{
-        font-size: 18px;
+        font-size: 20px;
     }
     .tdGray1{
-        font-size: 18px;
+        font-size: 20px;
     }
-
     .aboutContainer{
-        height: 20%;
-        margin-top: 420px;
+        height: 100%;
+        transform: translateY(91%);
+    }
+    .imgContainer{
+        position: absolute;
+        width: 100%;
+        height: 40%;
+        margin: 0;
+        transform: translateY(0%);
     }
     .imgContainer .img{
         width: 100%;
-        height: 40%;
-        transform: translate(0%, 0%);
-        margin-left: -10px;
-        margin-top: -230px;
+        height: 100%;
+        margin: 0;
+        border: 0;
+        border-radius: 0;
+        opacity: .6;
+    }
+    .textContainer{
+        position: absolute;
+        width: 100%;
+        height: 60%;
+        transform: translateY(52%);
     }
     .h1-about{
-        font-size: 30px;
-        margin-top: 30px;
-        margin-top: -250px;
+        font-size: 40px;
     }
     .textContainer p{
-        font-size: 18px;
-        margin-top: -15px;
-        margin-right: 8px;
-    }
-    @keyframes transitionOneMobile {
-        from{
-            transform: translateX(-100%);
-        }
-        to{
-            transform: translateX(0%);
-        }
-    }
-    @keyframes transitionTwoMobile {
-        from{
-            transform: translateX(-100%);
-        }
-        to{
-            transform: translateX(0%);
-        }
+        font-size: 20px;
+        padding: 0;
     }
 }
 
 @media (max-width: 400px){
- 
     .tableContainer{
-        height: auto;
-        min-height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: -10px;
-    }
-    .tableOne{
-        position: absolute;
-        width: 100%;
-        height: 52.5%;
-        top: 0;
-
-    }
-    .tableTwo{
-        position: absolute;
-        width: 100%;
-        height: 52.5%;
-        bottom: 0;
-    }
-    .table1,
-    .table2{
         width: 100%;
         height: 100%;
     }
+    .tableOne{
+        width: 100%;
+        height: 60%;
+    }
+    .table1{
+        width: 100%;
+    }
+    .tableTwo{
+        width: 100%;
+        height: 40%;
+    }
+    .table2{
+        width: 100%;
+    }
     .h1Table1{
-        font-size: 25px;
-        margin-top: 40px;
+        margin-top: 1%;
+        font-size: 40px;
     }
     .h1Table2{
-        font-size: 25px;
-        margin-top: 10px;
+        margin-top: 1%;
+        font-size: 40px;
     }
-    .table1,
-    .table2{
-        width: 90%;
-        font-size: 15px;
-    }
-
-    .tdGray{
-        font-size: 15px;
-    }
+    .tdGray,
     .tdGray1{
-        font-size: 15px;
+        font-size: 18px;
     }
-
+    .tdRed{
+        font-size: 18px;
+    }
     .aboutContainer{
-        height: 50%;
-        margin-top: 250px;
+        height: 100vh;
+        transform: translateY(110%);
+    }
+    .imgContainer{
+        width: 100%;
+        height: 45%;
+        position: absolute;
+        transform: translateY(0%);
+        margin: 0;
     }
     .imgContainer .img{
         width: 100%;
-        height: 40%;
-        transform: translate(0%, 0%);
-        margin-left: -10px;
-        margin-top: 70px;
+        height: 100%;
+        border-radius: 0;
+        margin: 0;
+        border: 0;
+        opacity: .6;
+    }
+    .textContainer{
+        width: 100%;
+        transform: translateY(65%);
+        text-align: center;
+        padding: 0;
     }
     .h1-about{
-        font-size: 30px;
-        margin-top: 30px;
+        font-size: 40px;
+        margin-top: 20%;
     }
     .textContainer p{
-        font-size: 18px;
-        margin-top: -15px;
-        margin-right: 8px;
+        font-size: 20px;
     }
-    @keyframes transitionOneMobile {
-        from{
-            transform: translateX(-100%);
-        }
-        to{
-            transform: translateX(0%);
-        }
-    }
-    @keyframes transitionTwoMobile {
-        from{
-            transform: translateX(-100%);
-        }
-        to{
-            transform: translateX(0%);
-        }
-    }
+    
 }

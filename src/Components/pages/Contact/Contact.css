@@ -3,12 +3,12 @@
     width: 100%;
     height: 86%;
     bottom: 0;
+    display: flex;
 }
 .Contact{
     position: absolute;
     width: 100%;
-    height: auto;
-    max-height: 50%;
+    height: 50%;
 }
 /*contactContainer*/
 
@@ -34,12 +34,26 @@
     color: #fff;
     text-decoration: none;
 }
-.contactContainer ul li{
+.contactContainer .firstLI{
     display: inline-block;
+    margin-top: -40px;
+    padding-bottom: 15px;
 }
-.contactContainer ul li a img{
-    width: 150px;
-    height: 150px;
+.contactContainer .secondLI{
+    display: inline-block;
+    margin-top: -50px;
+}
+.firstLI .img{
+    width: 50px;
+    height: 50px;
+}
+.secondLI .img{
+    width: 50px;
+    height: 50px;
+}
+.contactContainer img{
+    width: 125px;
+    height: 125px;
     margin-top: 100px;
     margin-left: 10px;
     margin-bottom: -6px;
@@ -64,6 +78,7 @@ width: 50%;
 height: 100%;
 right: 0;
 }
+
 .cContainer h3{
     font-size: 70px;
     color: white;
@@ -348,5 +363,328 @@ right: 0;
         height: 50px;
         margin-top: 25px;
         transform: translateY(70%);
+    }
+}
+
+@media (max-width: 900px){
+    .main{
+        overflow-y: auto;
+    }
+    .Contact{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    /* contact Container*/
+
+    .contactContainer{
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        transform: translateY(0%);
+    }
+    .contactContainer h2{
+        font-size: 60px;
+        margin-top: 3%;
+        margin-left: 1.5%;
+    }
+    .contactContainer p{
+        font-size: 30px;
+        margin-left: 1.6%;
+        color: #fff;
+    }
+    .contactContainer ul li a img{
+        width: 75px;
+        height: 75px;
+        margin-top: 6%;
+        margin-left: 1.5%;
+    }
+    .contactContainer .firstLI{
+        display: block;
+        padding: 10px;
+    }
+    .firstLI:nth-child(1){
+        margin-top: -6%;
+    }
+    .firstLI .img{
+        width: 60px;
+        height: 60px;
+    }
+    .contactContainer .secondLI{
+        display: block;
+        padding: 15px;
+    }
+    .secondLI .img{
+        width: 60px;
+        height: 60px;
+    }
+    /* cContainer */
+    .cContainer{
+        position: absolute;
+        width: 100%;
+        height: 40%;
+        transform: translateY(125%);
+    }
+
+    .cContainer h3{
+        font-size: 60px;
+        margin-top: 3%;
+        margin-left: 1.5%
+    }
+    .cContainer p{
+        font-size: 30px;
+        margin-left: 1.6%;
+    }
+    .cContainer img{
+        width: 120px;
+        height: 120px;
+        margin-top: 12%;
+        margin-left: 1%;
+    }
+    .cContainer .button{
+        width: 360px;
+        height: 110px;
+        margin-left: 1%;
+
+    }
+
+    /* emailContainer */
+    .emailContainer{
+        width: 100%;
+        height: 60vh;
+        transform: translateY(108%);
+    }
+    .emailContainer h2{
+        font-size: 60px;
+        margin-top: 3%;
+        margin-left: 1.5%
+    }
+    .inputContainer{
+        position: absolute;
+        width: 100%;
+        height: 40%;
+        transform: translateY(30%);
+        margin-top: 6%;
+    }
+    .inputContainer .input{
+        width: 360px;
+        height: 80px;
+        margin-top: -5%;
+        margin-bottom: 5%;
+        margin-left: 4%;
+        transform: translateY(50%);
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        background: linear-gradient(to right, #800020, #28282B, #000000);
+        border: 1px solid #ea1538;
+        padding: 5px;
+    }
+
+    .textareaContainer{
+        position: absolute;
+        width: 100%;
+        height: 80%;
+        transform: translateY(78%);
+    }
+    .textareaContainer .textarea{
+        width: 480px;
+        height: 200px;
+        margin-top: .3%;
+        padding: 5px;
+        margin-left: 4%;
+        transform: translateY(0%);
+        border: 1px solid #ea1538;
+        background: linear-gradient(to right, #800020, #28282B, #000000);
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
+    }
+    .textareaContainer .button{
+        margin-left: 4%;
+        margin-top: .5%;
+        transform: translateY(0%);
+    }
+}
+
+@media (max-width: 600px){
+    .Contact{
+        height: 100vh;
+    }
+    .contactContainer{
+        position: absolute;
+        transform: translateY(0%);
+        width: 100vw;
+        height: 50vh;
+    }
+    .contactContainer h2{
+        font-size: 40px;
+    }
+    .contactContainer p{
+        font-size: 20px;
+    }
+    .contactContainer .firstLI{
+        margin-top: 1%;
+        padding: 0;
+    }
+    .contactContainer .secondLI{
+        margin-top: 1%;
+        padding: 0;
+    }
+    .contactContainer .firstLI .img{
+        width: 40px;
+        height: 40px;
+    }
+    .contactContainer .secondLI .img{
+        width: 40px;
+        height: 40px;
+    }
+    .cContainer{
+        position: absolute;
+        transform: translateY(150%);
+        width: 100%;
+        height: 30%;
+    }
+    .cContainer h3{
+        font-size: 40px;
+    }
+    .cContainer p{
+        font-size: 20px;
+    }
+    .cContainer img{
+        width: 80px;
+        height: 80px;
+        margin-top: 8%;
+        margin-left: -1.6%;
+    }
+    .cContainer .button{
+        width: 240px;
+        height: 80px;
+    }
+    .emailContainer{
+        width: 100vw;
+        height: 100vh;
+        transform: translateY(74%);
+    }
+    .emailContainer h2{
+        font-size: 40px;
+    }
+    .inputContainer{
+        position: absolute;
+        width: 100vw;
+        height: 50vw;
+        transform: translateY(50%);
+    }
+    .inputContainer .input{
+        margin-bottom: 10%;
+        width: 300px;
+        height: 80px;
+        font-size: 18px;
+        padding: 0;
+    }
+    .textareaContainer{
+        position: absolute;
+        width: 100vw;
+        height: 40vh;
+        transform: translateY(83%);
+    }
+    .textareaContainer .textarea{
+        margin-left: 3.5%;
+        width: 380px;
+        height: 240px;
+    }
+}
+
+@media (max-width: 400px){
+    .Contact{
+        height: 100vh;
+    }
+    .contactContainer{
+        position: absolute;
+        transform: translateY(0%);
+        width: 100vw;
+        height: 65vh;
+    }
+    .contactContainer h2{
+        font-size: 40px;
+    }
+    .contactContainer p{
+        font-size: 20px;
+    }
+    .contactContainer .firstLI{
+        margin-top: 1%;
+        padding: 0;
+    }
+    .contactContainer .secondLI{
+        margin-top: 1%;
+        padding: 0;
+    }
+    .contactContainer .firstLI .img{
+        width: 40px;
+        height: 40px;
+    }
+    .contactContainer .secondLI .img{
+        width: 40px;
+        height: 40px;
+    }
+    .cContainer{
+        position: absolute;
+        transform: translateY(130%);
+        width: 100vw;
+        height: 50%;
+    }
+    .cContainer h3{
+        font-size: 40px;
+    }
+    .cContainer p{
+        font-size: 20px;
+    }
+    .cContainer img{
+        width: 80px;
+        height: 80px;
+        margin-top: 8%;
+        margin-left: -1.6%;
+    }
+    .cContainer .button{
+        width: 240px;
+        height: 80px;
+    }
+    .emailContainer{
+        width: 100vw;
+        height: 100vh;
+        transform: translateY(155%);
+    }
+    .emailContainer h2{
+        font-size: 40px;
+    }
+    .inputContainer{
+        position: absolute;
+        width: 100vw;
+        height: 50vw;
+        transform: translateY(50%);
+    }
+    .inputContainer .input{
+        margin-bottom: 12%;
+        width: 260px;
+        height: 70px;
+        font-size: 18px;
+        padding: 0;
+        margin-top: -10%;
+        margin-left: 1%;
+    }
+    .textareaContainer{
+        position: absolute;
+        width: 100vw;
+        height: 50vh;
+        transform: translateY(84%);
+    }
+    .textareaContainer .textarea{
+        margin-left: 1%;
+        margin-top: 1%;
+        width: 360px;
+        height: 210px;
+    }
+    .textareaContainer .button{
+        margin-left: 1%;
     }
 }

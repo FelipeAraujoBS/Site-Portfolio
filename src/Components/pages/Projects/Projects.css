@@ -95,4 +95,30 @@
     .ProjectRow--item img:hover{
         transform: scale(1);
     }
-}
+} 
+
+ @media (max-width: 900px){
+    .mainProjects{
+        overflow-y: auto;
+        margin-bottom: 20px;
+    }
+    .ProjectRow--list{
+        width: 100vw;
+    }
+    .ProjectRow--item div{
+       width: 100vw;
+       margin: 0 auto;
+       height: 80vh;
+       margin-top: 9%;
+    }
+    .ProjectRow--item div p{
+        font-size: 50px;
+        margin-top: -3%;
+        color: greenyellow;
+        font-weight: bold;
+    }
+    .ProjectRow--left,
+    .ProjectRow--right{
+        display: none;
+    }
+} 

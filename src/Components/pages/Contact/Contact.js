@@ -4,6 +4,7 @@ import github from "../../images/github.png"
 import instagram from "../../images/instagram.png"
 import resume from "../../images/Resume.png"
 import fResume from "./fResume.pdf"
+import whatsapp from "../../images/whatsapp.svg.png"
 
 function Contact() {
 
@@ -18,9 +19,12 @@ function Contact() {
                     </p>
 
                     <ul>
-                        <li><a href="https://www.linkedin.com/in/felipe-ar%C3%A1ujo-b87386231/" target="_blank" rel="noreferrer"><img src={linkedin} alt="linkedin" /> Linkedin</a></li>
-                        <li><a href="https://github.com/FelipeAraujoBS" target="_blank" rel="noreferrer"><img src={github} alt="github" /> Github</a></li>
-                        <li><a href="https://www.instagram.com/felipeabsdev/" target="_blank" rel="noreferrer"><img src={instagram} alt="instagram" /> Instagram</a></li>
+                        <li className="firstLI"><a href="https://www.linkedin.com/in/felipe-ar%C3%A1ujo-b87386231/" target="_blank" rel="noreferrer"><img className="img" src={linkedin} alt="linkedin" /> Linkedin</a></li>
+                        <li className="firstLI"><a href="https://github.com/FelipeAraujoBS" target="_blank" rel="noreferrer"><img className="img" src={github} alt="github" /> Github</a></li>
+                        <div>
+                        <li className="secondLI"><a href="https://www.instagram.com/felipeabsdev/" target="_blank" rel="noreferrer"><img className="img" src={instagram} alt="instagram" /> Instagram</a></li>
+                        <li className='secondLI'><a href="https://api.whatsapp.com/send?phone=5571992390048"><img className="img" src={whatsapp} alt="whatsapp"/> Whatsapp</a></li>
+                        </div>
                     </ul>
                 </div>
 
@@ -42,7 +46,7 @@ function Contact() {
                     <input className="input" type="hidden" name="_captcha" value="false" />
                     <div className="inputContainer">
                         <input className="input" type="text" name="Name" placeholder='Nome' required /> <br />
-                        <input className="input" type="email" name="Email" placeholder='Email' required /> <br />
+                        <input className="input" type="text" name="Email" placeholder='Email' required /> <br />
                     </div>
                     <div className="textareaContainer">
                         <textarea className="textarea" name="Message" placeholder='Mensagem' required /> <br />

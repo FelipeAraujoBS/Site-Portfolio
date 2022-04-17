@@ -23,9 +23,48 @@
     border: 1px solid white;
     padding: 10px;
     background-color: black;
+    text-decoration: none;
+    color: #fff;
 }
 .messageContainer .a:hover{
     background-color: white;
     color: black;
     border: 1px solid black;
+}
+
+@media (max-width: 600px){
+  
+    .messageContainer{
+        width: 400px;
+        height: 150px;
+        margin: 0 auto;
+        margin-top: 8%;
+        text-align: center;
+    }
+    .messageContainer h1{
+        font-size: 60px;
+        color: white;
+        font-weight: bold;
+        padding: 10px;
+    }
+    
+    .messageContainer .a{
+        font-size: 40px;
+        border: 1px solid white;
+        padding: 10px;
+        background-color: black;
+        text-decoration: none;
+        color: #fff;
+    }
+    .messageContainer .a:hover{
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+    }
+}
+
+@media (max-width: 400px){
+    .messageContainer{
+        width: 350px;
+    }
 }
