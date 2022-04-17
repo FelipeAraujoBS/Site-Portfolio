@@ -26,7 +26,7 @@ function Contact() {
 
                 <div className="cContainer">
                     <h3>Baixe meu Curriculo</h3>
-                    <p>Se sentindo old-school? <br />basta um click para baixar meu currículo. </p>
+                    <p className="p">Se sentindo old-school? <br />basta um click para baixar meu currículo. </p>
 
                     <div className="hoverble">
                         <img src={resume} alt="resume" /> 

@@ -8,7 +8,7 @@
  }
  .ProjectRow--list{
      transition: all ease 0.5s;
-     width: 15000px;
+     width: 455%;
      overflow-y: hidden;
  }
  .ProjectRow--listarea{
@@ -16,10 +16,11 @@
  }
  .ProjectRow--item div{
      display: inline-block;
-     width: 1140px;
-     height: 900px;
-     margin-top: 30px;
-     margin-left: 15px;
+     width: 850px;
+     height: 650px;
+     margin: .49%;
+     margin-top: .7%;
+     margin-left: .4%;
  }
  .ProjectRow--item div img{
      width: 100%;
@@ -49,7 +50,7 @@
      position: absolute;
      overflow: hidden;
      width: 40px;
-     height: 900px;
+     height: 650px;
      z-index: 99;
      display: flex;
      justify-content: center;
@@ -58,7 +59,7 @@
      cursor: pointer;
      opacity: 0;
      transition: all ease 0.5s;
-     margin-top: 30px;
+     margin-top: 3.17%;
  }
  .ProjectRow--left{
      left: 0;
@@ -76,42 +77,22 @@
      opacity: 1;
  }
 
- @media only screen and (max-height: 1000px){
+@media only Screen and (max-height: 900px){
     .ProjectRow--item div{
-        display: inline-block;
-        width: 870px;
-        height: 700px;
-        margin-top: 30px;
-        margin-left: 40px;
+        width: 610px;
+        height: 500px;
+        margin-top: .3%;
+        margin-left: .69%;
     }
     .ProjectRow--left,
     .ProjectRow--right{
-        height: 700px;
+        height: 500px;
+        margin-top: 1.5%;
     }
-} 
-
-@media only screen and (max-height: 900px){
-    .ProjectRow--item div{
-        width: 810px;
-        height: 600px;
-        margin-top: 30px;
-        margin-left: 40px;
+    .ProjectRow--item div img{
+        transform: scale(0.9);
     }
-    .ProjectRow--left,
-    .ProjectRow--right{
-        height: 600px;
-    }
-}
-
-@media only screen and (max-height: 800px){
-    .ProjectRow--item div{
-        width: 640px;
-        height: 480px;
-        margin-top: 30px;
-        padding: 10px;
-    }
-    .ProjectRow--left,
-    .ProjectRow--right{
-        height: 480px;
+    .ProjectRow--item img:hover{
+        transform: scale(1);
     }
 }

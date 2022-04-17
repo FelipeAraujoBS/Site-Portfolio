@@ -7,18 +7,32 @@ import Contact from "../pages/Contact/Contact"
 import Thanks from '../pages/Thanks/Thanks'
 
 function Constant(){
+
+    function toggleMenu(){
+        const nav = document.querySelector(".nav-header")
+        
+        nav.classList.toggle("active")
+    }
+
     return (
     <div className='body'>
       <Router>
             <div className="animation-area">
-                    <div className="hero">
-                        <nav className="nav-hero">
+                    <div className="header">
+                        <nav className="nav-header">
                                 <h2 className="logo">Felipe <span className="span">Aráujo</span></h2>
-                                <ul>
+                                
+                                <div class="btn-mobile" onClick={toggleMenu}>  
+                                    <p>Menu</p>
+                                    <div class="btn-hamburger"></div>
+                                </div>
+
+                                <ul className="ul">
                                 <li><Link to="/">Inicio</Link></li>
                                 <li><Link to="/About">Sobre mim</Link></li>
                                 <li><Link to="/Projects">Projetos</Link></li>
                                 <li><Link to="/Contact">Contato</Link></li>
+                                <li className="li"><Link to="/Thanks">Thanks</Link></li>
                                 </ul>
                             </nav>
                     </div>

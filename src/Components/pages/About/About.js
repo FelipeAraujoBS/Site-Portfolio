@@ -7,7 +7,7 @@ function About() {
         <div className="mainAbout">
             <div className="tableContainer">
                 <div class="tableOne">
-                <h1 class="h1Table">Competências</h1>
+                <h1 class="h1Table1">Competências</h1>
                     <table className="table1">
                         <tr>
                             <td className="tdRed"><b>Proatividade</b></td>
@@ -28,7 +28,7 @@ function About() {
                     </table>
                 </div>
                 <div class="tableTwo">
-                <h1 class="h1Table">Tecnologias</h1>
+                <h1 class="h1Table2">Tecnologias</h1>
                     <table className="table2">
                         <tr>
                             <td className="tdRed"><b>Front End</b></td>

@@ -7,7 +7,8 @@
 .Contact{
     position: absolute;
     width: 100%;
-    height: 50%;
+    height: auto;
+    max-height: 50%;
 }
 /*contactContainer*/
 
@@ -28,6 +29,10 @@
 .contactContainer p{
     font-size: 40px;
     margin-left: 12px;
+}
+.contactContainer a{
+    color: #fff;
+    text-decoration: none;
 }
 .contactContainer ul li{
     display: inline-block;
@@ -95,9 +100,9 @@ right: 0;
 .emailContainer{
     position: absolute;
     width: 100%;
-    height: 50%;
+    height: auto;
+    max-height: 50%;
     bottom: 0;
-    /* background-color: yellow; */
 }
 .emailContainer h2{
     font-size: 70px;
@@ -182,6 +187,9 @@ right: 0;
         font-size: 40px;
         margin-left: 10px;
     }
+    .p{
+        color: #fff;
+    }
     .contactContainer ul li a img{
         width: 100px;
         height: 100px;
@@ -263,35 +271,40 @@ right: 0;
 }
 
 @media only screen and (max-height: 800px){
-   
     .contactContainer h2{
         font-size: 45px;
         margin-top: 20px;
-        
+        margin-left: 15px;
     }
     .contactContainer p{
         font-size: 30px;
-        margin-left: 10px;
+        margin-left: 15px;
     }
     .contactContainer ul li a img{
         width: 75px;
         height: 75px;
         margin-top: 62.5px;
+        margin-left: 15px;
     }
     .contactContainer ul li a{
         font-size: 30px;
+        text-decoration: none;
+        color: white;
    }
     .cContainer h3{
         font-size: 45px;
+        margin-left: 25px;
     }
     .cContainer p{
         font-size: 30px;
+        margin-left: 25px;
     }
     .cContainer img{
         width: 75px;
         height: 75px;
         margin-top: 60px;
         margin-bottom: -1px;
+        margin-left: 12px;
     }
     .cContainer .button{
         width: 300px;
@@ -311,10 +324,11 @@ right: 0;
     }
     .emailContainer h2{
         font-size: 45px;
+        margin-top: 5px;
     }
     .textareaContainer{
         width: 65%;
-
+        margin-top: 25px;
     }
     .textareaContainer .textarea{
         width: 550px;
@@ -325,11 +339,14 @@ right: 0;
         margin-left: 10px;
         transform: translateY(100%);
     }
+    .inputContainer{
+        margin-top: 13px;
+    }
 
     .inputContainer .input{
         width: 410px;
         height: 50px;
-        margin-top: 20px;
+        margin-top: 25px;
         transform: translateY(70%);
     }
 }

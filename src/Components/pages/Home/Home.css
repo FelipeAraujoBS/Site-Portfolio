@@ -1,89 +1,91 @@
 .mainHome{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-size: 35px;
-    width: 100%;
-    height: auto;
-    min-height: 86%;
-    margin-top: 60px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 90vh;
+    display: flex;
     overflow-y: hidden;
+    overflow-x: hidden;
 }
 .imgHome{
  position: absolute;
  width: 40%;
- height: 90%; 
+ height: 90vh; 
  bottom: 0;
- right: 0;
+ right: 3%;
 }
 .imgHome .img{
     position: absolute;
     bottom: 0;
-    right: 8%;
-    height: 150%;
-    width: 125%;
+    height: 110%;
+    width: 100%;
 }
 .textHome{
-    position: absolute;
-    width: 650px;
-    height: 250px;
-    transform: translate(20%, 250%);
-    left: 0;
-    color: white;
+   position: absolute;
+   color: white;
+   height: auto;
+   max-height: 30%;
+   width: auto;
+   max-width: 60%;
+   left: 6%;
+   bottom: 10%;
 }
-.textHome h1{
+
+.textHome .name{
     text-align: left;
     font-size: 100px;
     font-family: "Montserrat", sans-serif;
  }
- .textHome h2{
-     font-size: 60px;
+
+ .textHome .job{
+     font-size: 50px;
      text-align: left;
      font-family: "Montserrat", sans-serif;
  }
 
- 
+ @media only screen and (max-height: 900px){
+     .textHome .name{
+         font-size: 80px;
+     }
+     .textHome .job{
+         font-size: 40px;
+     }
+ }
 
-@media only screen and (max-height: 1000px){
-    .textHome{
-        transform: translate(15%, 200%);
-    }
-    .textHome h1{
-        font-size: 80px;
-    }
-    .textHome h2{
-        font-size: 45px;
-    }
-}
+ @media only screen and (max-height: 600px){
+     .mainHome{
+         height: 88vh;
+         overflow-y: hidden;
+     }
+ }
 
+ @media (max-width: 900px){
+     .textHome .name{
+         font-size: 60px;
+     }
 
-@media only screen and (max-height: 900px){
-    .textHome{
-       transform: translate(20%, 175%);
-    }
-    .textHome h1{
-        font-size: 80px;
-    }
-    .textHome h2{
-        font-size: 45px;
-    }
-}
+     .textHome .job{
+         font-size: 30px;
+     }
+ }
 
-@media only screen and (max-height: 800px){
-    .mainHome{
-        min-height: 81%;
-    }
-    .textHome{
-        width: 450px;
-        height: 150px;
-        transform: translate(20%, 200%);
-    }
-    .textHome h1{
-        font-size: 60px;
-    }
-    .textHome h2{
-        font-size: 35px;
-    }
-}
+ @media (max-width: 600px){  
+     .textHome{
+         margin-left: -3%;
+     } 
+     .imgHome{
+        margin-right: 4%;
+     } 
+     .imgHome .img{
+         width: 140%;
+     }
+    .textHome .name{
+         font-size: 30px;
+     }
+
+     .textHome .job{
+         font-size: 15px;
+     }
+ }

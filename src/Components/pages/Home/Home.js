@@ -9,10 +9,13 @@ function Home() {
                     <img className="img" src={foto} alt="foto" />
                 </div>
                 <div className="textHome">
-                    <h1>Felipe <span className="span">Araújo</span></h1>
-                    <h2>Web developer</h2>
+                    <h1 className="name">Felipe <span className="span">Araújo</span></h1>
+                    <h2 className="job">Web developer</h2>
                 </div>
             </div>
+
+      
+
         </div>
     )
 }
