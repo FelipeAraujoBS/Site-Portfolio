@@ -32,7 +32,7 @@ function Projects(){
     }
 
     return(
-        <div class="mainProjects">
+        <div className="mainProjects">
             <div className="ProjectRow">
             <div className="ProjectRow--listarea">
                 <div className="ProjectRow--left" onClick={handleLeftArrow}>

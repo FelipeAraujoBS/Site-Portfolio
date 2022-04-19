@@ -22,9 +22,9 @@ function Constant(){
                         <nav className="nav-header">
                                 <h2 className="logo">Felipe <span className="span">Aráujo</span></h2>
                                 
-                                <div class="btn-mobile" onClick={toggleMenu}>  
+                                <div className="btn-mobile" onClick={toggleMenu}>  
                                     <p>Menu</p>
-                                    <div class="btn-hamburger"></div>
+                                    <div className="btn-hamburger"></div>
                                 </div>
 
                                 <ul className="ul">

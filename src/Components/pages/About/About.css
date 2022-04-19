@@ -362,11 +362,10 @@ body{
 
 @media (max-width: 600px){
     .tableContainer{
-        height: 100vh;
+        height: 97vh;
         display: flex;
         justify-content: center;
         align-items: center;
-
     }
     .tableOne{
         position: absolute;
@@ -374,13 +373,12 @@ body{
         top: 0;
         width: 100%;
         height: 50%;
-
     }
     .tableTwo{
         position: absolute;
-        transform: translateY(10%);
+        transform: translateY(-13%);
         width: 100%;
-        height: 50%;
+        height: 40%;
     }
     .h1Table1{
         font-size: 40px;
@@ -389,7 +387,6 @@ body{
     .h1Table2{
         font-size: 40px;
         color: lightgray;
-        margin-top: -20%;
     }
     .table1,
     .table2{
@@ -404,14 +401,13 @@ body{
     }
     .aboutContainer{
         height: 100%;
-        transform: translateY(91%);
+        transform: translateY(110%);
     }
     .imgContainer{
         position: absolute;
         width: 100%;
         height: 40%;
         margin: 0;
-        transform: translateY(0%);
     }
     .imgContainer .img{
         width: 100%;
@@ -425,10 +421,11 @@ body{
         position: absolute;
         width: 100%;
         height: 60%;
-        transform: translateY(52%);
+        transform: translateY(67%);
     }
     .h1-about{
         font-size: 40px;
+        margin-top: 10%;
     }
     .textContainer p{
         font-size: 20px;
@@ -438,8 +435,8 @@ body{
 
 @media (max-width: 400px){
     .tableContainer{
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vh;
     }
     .tableOne{
         width: 100%;
@@ -451,6 +448,7 @@ body{
     .tableTwo{
         width: 100%;
         height: 40%;
+        transform: translateY(40%);
     }
     .table2{
         width: 100%;
@@ -472,7 +470,7 @@ body{
     }
     .aboutContainer{
         height: 100vh;
-        transform: translateY(110%);
+        transform: translateY(145%);
     }
     .imgContainer{
         width: 100%;
@@ -491,7 +489,8 @@ body{
     }
     .textContainer{
         width: 100%;
-        transform: translateY(65%);
+        height: 75vh;
+        transform: translateY(60%);
         text-align: center;
         padding: 0;
     }

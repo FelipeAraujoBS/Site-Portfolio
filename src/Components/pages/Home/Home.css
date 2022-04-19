@@ -10,11 +10,11 @@
     overflow-x: hidden;
 }
 .imgHome{
- position: absolute;
- width: 40%;
- height: 90vh; 
- bottom: 0;
- right: 3%;
+    position: absolute;
+    width: 40%;
+    height: 90vh; 
+    bottom: 0;
+    right: 3%;
 }
 .imgHome .img{
     position: absolute;
@@ -45,21 +45,14 @@
      font-family: "Montserrat", sans-serif;
  }
 
- @media only screen and (max-height: 900px){
-     .textHome .name{
-         font-size: 80px;
-     }
-     .textHome .job{
-         font-size: 40px;
-     }
- }
-
- @media only screen and (max-height: 600px){
-     .mainHome{
-         height: 88vh;
-         overflow-y: hidden;
-     }
- }
+ @media only screen and (max-height: 800px){
+    .textHome .name{
+        font-size: 80px;
+    }
+    .textHome .job{
+        font-size: 40px;
+    }
+}
 
  @media (max-width: 900px){
      .textHome .name{
