@@ -11,7 +11,7 @@ body{
     position: absolute;
     width: 100%;
     height: 55%;
-    margin-top: 60px;
+    margin-top: 3%;
     text-align: center;
 }
 .tableOne{
@@ -50,12 +50,19 @@ body{
 .h1Table1,
 .h1Table2{
     font-size: 60px;
-    margin-top: 35px;
-    margin-bottom: 10px;
+    margin-top: 2%;
+    margin-bottom: 1%;
     color: lightgray;
 }
 
-.table1, 
+.table1{
+    margin: 0 auto;
+    width: 80%;
+    height: 60%;
+    font-size: 25px;
+    color: white;
+} 
+
 .table2{
     margin: 0 auto;
     width: 80%;
@@ -64,22 +71,37 @@ body{
     color: white;
 }
 
-.tdRed{
+ .tdRed{
     border-left: 1px solid transparent;
     border-right: 1px solid transparent;
     border-top: 1px solid transparent;
     border-radius: 5px;
+    background: linear-gradient(to left, #28282B, #800020);
     width: 25%;
-    height: 40px;
-    background: rgba(128, 0, 32, 0.8);
-    color: #000;
+    height: auto;
+    padding: 5px;
+    min-height: 50px;
+} 
+.tdRed b{
+    color: white;
 }
+
+.tdGray{
+    background-color: rgba(229, 228, 226, 0.5);
+    padding: 15px;
+    font-size: 25px;
+}
+.tdGray1{
+    background-color: rgba(229, 228, 226, 0.5);
+    padding: 0px;
+    font-size: 25px;
+} 
 .aboutContainer{
     position: absolute;
     width: 100%;
     min-height: 70%;
     transform: translateY(87%);
-    margin-top: 9px;
+    margin-top: .01%;
 }
 .imgContainer{
     position: absolute;
@@ -93,8 +115,8 @@ body{
     height: 90%;
     border: 3px solid #D2042D;
     border-radius: 50%;
-    margin-left: 30px;
-    margin-top: 30px;
+    margin-left: 6%;
+    margin-top: 6%;
 }
 .textContainer{
     position: absolute;
@@ -102,175 +124,23 @@ body{
     width: 60%;
     height: 90%;
     text-align: center;
-    font-size: 30px;
 }
 .textContainer p{
     color: #fff;
     font-weight: bold;
+    font-size: 30px;
 }
 .h1-about{
     margin-top: 8%;
     color: lightgray;
     font-size: 80px;
-    margin-bottom: 30px;
-}
-
-
-
-
-@media only Screen and (max-height: 1000px){
-    .mainContainer{
-        width: 100vw;
-        height: auto;
-        min-height: 100%;
-    }
-    .tableContainer{
-        position: absolute;
-        width: 100%;
-        height: 55%;
-        margin-top: 60px;
-        text-align: center;
-    }
-    .tableOne{
-        position: absolute;
-        transform: translateX(0%);
-        width: 50%;
-        height: 100%;
-        max-height: 100%;
-        animation: transitionOne 1.3s;
-    }
-    .tableTwo{
-        position: absolute;
-        transform: translateX(100%);
-        width: 50%;
-        height: 100%;
-        max-height: 100%;
-        animation: transitionTwo 1.3s;
-    }
-    @keyframes transitionOne {
-        from{
-            transform: translateX(-100%);
-        }
-        to{
-            transform: translateX(0%);
-        }
-    }
-    @keyframes transitionTwo {
-        from{
-            transform: translateX(200%);
-        }
-        to{
-            transform: translateX(100%);
-        }
-    }
-    
-    .h1Table1,
-    .h1Table2{
-        font-size: 60px;
-        margin-top: 35px;
-        margin-bottom: 10px;
-        color: lightgray;
-    }
-    
-    .table1, 
-    .table2{
-        margin: 0 auto;
-        width: 80%;
-        height: 60%;
-        font-size: 25px;
-        color: white;
-    }
-    
-    .tdRed{
-        border-left: 1px solid transparent;
-        border-right: 1px solid transparent;
-        border-top: 1px solid transparent;
-        border-radius: 5px;
-        width: 25%;
-        height: 40px;
-        background: rgba(128, 0, 32, 0.8);
-        color: #000;
-    }
-    .tdGray{
-        background-color: rgba(229, 228, 226, 0.5);
-        padding: 15px;
-        font-size: 25px;
-    }
-    .tdGray1{
-        background-color: rgba(229, 228, 226, 0.5);
-        padding: 0;
-        font-size: 25px;
-    } 
-    
-    .aboutContainer{
-        position: absolute;
-        width: 100%;
-        min-height: 70%;
-        transform: translateY(87%);
-        margin-top: 9px;
-    }
-    .imgContainer{
-        position: absolute;
-        left: 0;
-        width: 35%;
-        height: 90%;
-        margin-left: 3%;
-    }
-    .imgContainer .img{
-        width: 90%;
-        height: 90%;
-        border: 3px solid #D2042D;
-        border-radius: 50%;
-        margin-left: 30px;
-        margin-top: 30px;
-    }
-    .textContainer{
-        position: absolute;
-        right: 0;
-        width: 60%;
-        height: 90%;
-        text-align: center;
-        font-size: 30px;
-        padding-right: 1rem;
-    }
-    .h1-about{
-        margin-top: 8%;
-        color: lightgray;
-        font-size: 80px;
-        margin-bottom: 30px;
-    }
-}
-
-@media only screen and (max-height: 900px){
-    .h1Table{
-        margin-top: 25px;
-    }
-    .table1,
-    .table2{
-        height: 75%;
-        width: 75%;
-        font-size: 20px;
-    }
-    .table1{
-        max-height: 75%;
-    }
-    .tdGray{
-        font-size: 25px;
-        padding: 5px;
-    }
-    .tdGray1{
-        font-size: 25px;
-        padding: 5px;
-    }
-    .h1-about{
-        margin-bottom: 15px;
-    }
+    margin-bottom: 3%;
 }
 
 @media only screen and (max-height: 800px){
     .h1Table1,
     .h1Table2{
-        margin-top: 5px;
+        margin-top: 2%;
     }
     .table1,
     .table2{
@@ -280,26 +150,36 @@ body{
         margin: 0 auto;
     }
     .tdGray{
-        font-size: 20px;
+        font-size: 25px;
+        padding: 14px;
     }
     .tdGray1{
-        font-size: 20px;
+        font-size: 22px;
+        padding: 5px;
     }
     .aboutContainer{
-        margin-top: 30px;
+        margin-top: 0.2%;
     }
     .imgContainer{
-        margin-left: 10px;
-        margin-top: 20px;
+        margin-left: 1%;
+        margin-top: 2%;
     }
-    .textContainer{
+    .textContainer p{
         font-size: 25px;
     }
     .h1-about{
         font-size: 60px;
-        margin-top: 50px;
+        margin-top: 9%;
+        margin-bottom: 3%;
     }
 }
+
+
+
+
+
+
+/* MOBILE */
 
  @media (max-width: 900px){
     .tableContainer{

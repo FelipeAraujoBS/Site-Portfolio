@@ -62,10 +62,10 @@ function About() {
                         Tenho 24 anos e sou de Salvador-BA.
                         Estudante de Eng. de Software, apaixonado por tecnologia, me encontrei programando em JavaScript. 
                         <br/>
-                        Sou um Desenvolver Web com uma grande paixão por aprender.
+                        Sou um Desenvolvedor Web com uma grande paixão por aprender.
                         Domino algumas das principais tecnologias do mercado, e estou ansioso para aprender cada dia mais.
                          <br/>
-                        Posso ajudar o seu negocio desenvolvendo websites, tornando-o bem sucedido a longo prazo. <br/> <br/> Focado, atualmente, no <span className="span">desenvolvimento front-end</span>.
+                        Posso ajudar o seu negócio desenvolvendo websites, tornando-o bem sucedido a longo prazo. <br/> <br/> Focado, atualmente, no <span className="span">desenvolvimento front-end</span>.
                         </p>
                 </div>
 

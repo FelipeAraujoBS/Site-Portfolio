@@ -1,7 +1,9 @@
 import "./Home.css"
 import foto from "../../images/fotoHome.png"
 
+
 function Home() {
+
     return (
         <div>
             <div className="mainHome">
@@ -12,10 +14,8 @@ function Home() {
                     <h1 className="name">Felipe <span className="span">Araújo</span></h1>
                     <h2 className="job">Web developer</h2>
                 </div>
+              
             </div>
-
-      
-
         </div>
     )
 }
